@@ -49,12 +49,20 @@ body {
 .submenu li a{
     display: block; 
     padding: 15px; 
-    color: white; 
+    color: #353335; 
     font-family: 'Open Sans'; 
     text-decoration: none; 
 }
 .menu li:hover .submenu{
-    display: block; 
+    display: block;    
+}
 
+li b{
     
+    margin-left: 300px;
+    color: #353335;
+    font-family: 'Open Sans';
+
+
+
 }
