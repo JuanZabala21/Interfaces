@@ -5,15 +5,14 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 body {
-
 }
 
 .navegation {
     width: 1000px; 
     margin: 30px auto;
     background: silver; 
+    padding: 0;
 }
 
 .navegation ul{
@@ -62,7 +61,35 @@ li b{
     margin-left: 300px;
     color: #353335;
     font-family: 'Open Sans';
-
-
-
 }
+.slider {
+    
+    width: 95%;
+    margin: auto; 
+    padding: 0;
+    overflow: hidden; 
+    margin-top: -30px;
+   
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%; 
+    animation: cambio 20s infinite; 
+    animation-direction: alternate; 
+}
+.slider li {
+    width: 100%; 
+    list-style: none;
+}
+.silder img {
+    width: 100%;
+}
+ @keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -132%}
+    45% {margin-left: -132%}
+    50%{margin-left: -267%}
+    70% {margin-left:-267%}
+ }
