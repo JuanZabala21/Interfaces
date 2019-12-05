@@ -8,6 +8,11 @@
 body {
 }
 
+H1 {
+    font-family: 'Open sans';
+    text-align: center;
+}
+
 .buscador {
     width: 1000px; 
     margin: 30px auto;
@@ -20,7 +25,6 @@ body {
 .buscador ul{
     list-style: none; 
 }
-
 
 .menu1 > li{
     /*position: relative;*/
@@ -39,7 +43,6 @@ body {
     color: green;
     transition: all .3s; 
 }
-
 
 .navegation {
     width: 1000px; 
@@ -128,3 +131,33 @@ li b{
     70% {margin-left:-267%}
  }
 
+ .container{
+    justify-content: center;
+    position: relative; 
+    top: 50px; 
+    width: 1000px; 
+    height: 400px; 
+    margin: auto; 
+    margin-left: 183px;
+    background: silver; 
+ }
+
+ .container .list-image{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+
+ }
+
+ .container .list-image li {
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+    list-style: none; 
+ }
+
+
+ .container .list-image li img{
+     position: relative;
+     width: 300px;
+     height: 200px; 
+ }
