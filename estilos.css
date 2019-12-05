@@ -8,11 +8,45 @@
 body {
 }
 
+.buscador {
+    width: 1000px; 
+    margin: 30px auto;
+    background: silver; 
+    padding: 0;
+    margin-left: 183px;
+    margin-top: -4px;
+}
+
+.buscador ul{
+    list-style: none; 
+}
+
+
+.menu1 > li{
+    /*position: relative;*/
+    display: inline-block; 
+}
+
+.menu1 > li > label {
+    display: block; 
+    padding: 15px 20px; 
+    color: #353335; 
+    font-family: 'Open sans';
+    text-decoration: none; 
+}
+
+.menu1 li label:hover{
+    color: green;
+    transition: all .3s; 
+}
+
+
 .navegation {
     width: 1000px; 
     margin: 30px auto;
     background: silver; 
     padding: 0;
+    margin-left: 183px;
 }
 
 .navegation ul{
@@ -93,3 +127,4 @@ li b{
     50%{margin-left: -267%}
     70% {margin-left:-267%}
  }
+
