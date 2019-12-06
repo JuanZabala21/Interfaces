@@ -9,17 +9,27 @@ body {
   
 }
 
+.textogris12r {
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: 
+  #767676;
+  text-decoration: none;
+
+}
+
 H1 {
     font-family: 'Open sans';
     text-align: center;
 }
 
 .buscador {
-    width: 1000px; 
+    width: 100%;
     margin: 30px auto;
     background: silver; 
     padding: 0;
-    margin-left: 183px;
     margin-top: -4px;
 }
 
@@ -46,11 +56,10 @@ H1 {
 }
 
 .navegation {
-    width: 1000px; 
+    width: 100%; 
     margin: 30px auto;
     background: silver; 
     padding: 0;
-    margin-left: 183px;
 }
 
 .navegation ul{
@@ -102,7 +111,7 @@ li b{
 }
 .slider {
     
-    width: 95%;
+    width: 100%;
     margin: auto; 
     padding: 0;
     overflow: hidden; 
@@ -133,8 +142,7 @@ li b{
  }
 
  .container{
-    border-style: solid;
-    border-color: green; 
+
     justify-content: center;
     position: relative;  
     top: -30px;
@@ -142,7 +150,7 @@ li b{
     height: 550px; 
     margin: auto; 
     margin-left: 183px;
-    background: white;
+  
     
  }
 
