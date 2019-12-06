@@ -9,13 +9,22 @@ body {
   
 }
 
+.textogris10b {
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color:#7e7e7e;
+  margin-left: 500px;
+
+}
+
 .textogris12r {
 
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: normal;
-  color: 
-  #767676;
+  color:   #767676;
   text-decoration: none;
 
 }
@@ -26,7 +35,7 @@ H1 {
 }
 
 .buscador {
-    width: 100%;
+    width: 95%;
     margin: 30px auto;
     background: silver; 
     padding: 0;
@@ -56,7 +65,7 @@ H1 {
 }
 
 .navegation {
-    width: 100%; 
+    width: 95%; 
     margin: 30px auto;
     background: silver; 
     padding: 0;
