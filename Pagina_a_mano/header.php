@@ -6,14 +6,14 @@
             <link href="css/search.css" rel="stylesheet" />
             <link href="css/grid.css" rel="stylesheet" />
             <link href="css/footer.css" rel="stylesheet" />
-          <!--   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-            <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"> -->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+            <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"> 
         </head>
         
         <body class="container">
             <!-- navbar -->
             <header>            
-                    <nav style="background-color: lightgreen" role="navigation">
+                    <nav role="navigation">
                         <ul class="menu-navbar">
                             <li class="list-option menu-hambur">
                                 <div id="menuToggle">
