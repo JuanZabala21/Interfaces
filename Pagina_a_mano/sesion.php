@@ -1,6 +1,6 @@
 <?php 
-include_once 'Pagina_a_mano/global/conexion.php';
-include_once 'Pagina_a_mano/global/config.php';
+include_once 'global/conexion.php';
+include_once 'global/config.php';
 
 session_start();
 
@@ -13,7 +13,7 @@ $array = mysqli_fetch_array($consulta);
 
 if($array['contar']>0){
     $_SESSION['username'] = $usuario;
-    header("location: Pagina_a_mano/index.php");
+    header("location: index.php");
 
 }else{
     echo 'Datos incorrectos';

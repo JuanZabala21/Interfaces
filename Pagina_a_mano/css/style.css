@@ -162,7 +162,7 @@ header {
 }
 
 #title {
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 
 
@@ -178,6 +178,7 @@ header {
 /* Titulo Pagina */
 .titulo-pagina{
     margin-right: auto;
+    margin-left: auto;
 }
 
 .sepadador{

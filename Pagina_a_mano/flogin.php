@@ -4,8 +4,8 @@
 session_start();
 $session_id = session_id();
 $duration =900;
-include 'Pagina_a_mano/global/config.php';
-include 'Pagina_a_mano/global/conexion.php';
+include 'global/config.php';
+include 'global/conexion.php';
 
 $username=$_POST['username'];
 $password=$_POST['password'];

@@ -10,7 +10,7 @@
 <!-- Grid -->
 <div class="row">
 <?php    
-$sentencia=$pdo->prepare("SELECT * FROM `productos`"); 
+$sentencia=prepare("SELECT * FROM `productos`"); 
 $sentencia->execute();
 $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC); 
 ?> 
