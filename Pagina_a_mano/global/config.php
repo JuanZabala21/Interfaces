@@ -2,11 +2,9 @@
 define("KEY", "develoteca");
 define("COD", "AES-128-ECB"); 
 
-$server="localhost";
-$user="root";
-$password="zabala21";
-$database="interfaces";
-$connect = mysqli_connect($server, $user, $password, $database);
-
+define("SERVIDOR", "localhost");
+define("USUARIO","root");
+define("PASSWORD","zabala21");
+define("BD","interfaces");
 
 ?>
