@@ -1,10 +1,10 @@
- 
+
  <?php
 
 session_start();
 $session_id = session_id();
 $duration =900;
-include 'global/config.php';
+include 'global/config2.php';
 include 'global/conexion.php';
 
 $username=$_POST['username'];
@@ -36,7 +36,7 @@ if($username=='' or $password=='') {
     		$_SESSION['game_date'] = '0000-00-00';
     		$_SESSION['start']= time();
   			$_SESSION['duration']= $duration;
-   			header("location: Pagina_a_mano/index.php");
+   			header("location: index.php");
    		}else{
 
   			header("location: login.php?status=error&msg=Nombre de usuario o contraseña incorrectos");

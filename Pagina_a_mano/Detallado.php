@@ -1,12 +1,12 @@
 <?php include('header.php')?>
 <br>
-<h3> Lista del Carrito <h3>
+<h3 style="margin-left: 50px;"> Lista del Carrito <h3>
 
 <?php if(!empty($_SESSION['Carrito'])) {?>
 
 
 
-<table class="table table-light table-bordered">
+<table class="table table-light table-bordered" style="margin: 50px;border: 1px solid black;">
     <tbody>
         <tr>
             <th width="40%" class="text-center">Nombre</th>
