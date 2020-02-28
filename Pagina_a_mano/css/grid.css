@@ -9,9 +9,7 @@
   
   /* Remove extra left and right margins, due to padding */
   .row {
-    margin: 0 -5px;
     position: relative;
-    left: 16%;
     margin-top: 30px;
     }
   
@@ -48,4 +46,8 @@
   .foto-cata{
       width: 200px;
       height: 200px;
+  }
+
+  .conta{
+    margin-left: 25%;
   }

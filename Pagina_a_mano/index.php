@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include('header.php'); ?>
+            <?php include('header.php'); ?>
 
             <!-- Separador -->
             <div class="sepadador">
@@ -40,18 +40,10 @@
              <!-- Separador -->
              <div class="sepadador" style="margin-top: 9px;">
             </div>
+            
+            <?php include('search_bar.php'); ?>
 
-            <!-- Search Bar -->
-            <div class="wrap">
-                <div class="search">
-                   <input type="text" class="searchTerm" placeholder="Que desea buscar?">
-                   <button type="submit" class="searchButton">
-                     <div class="ejemplo">BUSCAR</div>
-                     <i class="fa fa-search"></i>
-                     
-                  </button>
-                </div>
-             </div>
+            <?php include('categoria.php'); ?>
 
 <!-- Separador -->
 
