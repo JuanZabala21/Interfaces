@@ -241,6 +241,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(4
     padding: 20px;
     text-align: center;
     background-color: #f1f1f1;
-    height: 350px;
+    height: auto !important;
     width: 300px;
 }

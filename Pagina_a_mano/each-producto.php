@@ -31,6 +31,7 @@ $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         src="<?php echo $producto['Imagen'];?>">
         <div class="card-body">
         <span><?php echo $producto['Nombre'];?></span>
+        <p><?php echo $producto['Descripcion'];?></p>
         <h5 class="card-title"><?php echo $producto['Precio'];?>$</h5>
         
         <form action="" method="post">
