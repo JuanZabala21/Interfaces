@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 28-02-2020 a las 02:05:52
+-- Tiempo de generación: 28-02-2020 a las 16:44:59
 -- Versión del servidor: 5.7.17-log
 -- Versión de PHP: 7.3.11
 
@@ -46,6 +46,26 @@ INSERT INTO `productos` (`id`, `Nombre`, `Precio`, `Descripcion`, `Imagen`, `Cli
 (2, 'Microondas Oster', '100', 'Capacidad de 36 litros.\r\nPotencia total de cocción de 1000 Watts.\r\nPanel digital de control táctil, que te permite monitorear el tiempo de cocción, programas y temporizador.\r\nCuenta con ajustes de potencia para cocción especializada.\r\nFunción de descongelación automática incorporada, te muestra intervalos para descongelar diferentes alimentos.\r\nPlato giratorio en vidrio resistente al calor.', 'https://http2.mlstatic.com/microondas-oster-ogsr903-plata-25-litros-09-cu-tienda-f-D_NQ_NP_911908-MLV31894815061_082019-Q.jpg', 0),
 (3, 'Secadora Whirpool', '350', 'Esta máquina es una lavadora secadora de tipo carga frontal Whirlpool FWDD117168SBS. Es el aparato ideal para una familia de tres o cuatro miembros, ya que sería la mas adecuada debido a que cuenta con una gran capacidad de hasta 11kg de lavado y 7 de secado. En cuanto a sus dimensiones, ésta tiene una profundidad es de 60.5 cm, ya que es un modelo estándar.\r\n\r\nLa ropa quedará perfectamente seca y casi sin arrugas después del centrifugado, ya que el número de revoluciones se eleva hasta las 1.600RPM. La marca anuncia una clase energética de tipo A, lo que significa que al final de mes, tus facturas no se verán engordadas por utilizar un aparato antiguo.', 'https://whirlpoolcol.vteximg.com.br/arquivos/ids/157570-500-500/7MWGD90HEFC.jpg?v=636463729544070000', 0);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nombre`, `username`, `password`) VALUES
+(1, 'Juan Pablo', 'Juan', '1234');
+
 --
 -- Índices para tablas volcadas
 --
@@ -57,6 +77,12 @@ ALTER TABLE `productos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -65,6 +91,12 @@ ALTER TABLE `productos`
 --
 ALTER TABLE `productos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
