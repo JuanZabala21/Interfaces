@@ -33,10 +33,7 @@
             value="Eliminar"
             type="submit">
              Eliminar</button> </td>
-            
             </form>
-
-            
         </tr>
         
         <?php $total=$total+($producto['Precio']*$producto['Cantidad']); ?>
@@ -44,11 +41,21 @@
 
         <tr>
         <td colspan="3" text-align="right"><h3>Total</h3></td> 
-        <td text-align="right"><h3>$ <?php echo number_format($total,2); ?></h3></td> 
+        <td text-align="right"><h3>$<?php echo number_format($total,2); ?></h3></td> 
         <td></td> 
         </tr>
-
-
+        <td colspan="5">
+        <form action="pagar.php" method="post">
+        <div class="alert alert-success">
+            <div class="form-group"> 
+                <label for="my-input"> Correo de Contacto <label> 
+                <input id="email" name="email" type="email" class="form-control" placeholder="Correo">
+            </div>
+            <small id="emailHelp" class="form-text text-muted"> La factura sera enviada al correo, para proceder a retirarlo.
+        </div>
+            <button class="btn btn-primary btn-lg btn-block" value="proceder" name="btnAccion" type="submit">Comprar</button> 
+        </form>
+        </td>
     </tbody>
 </table>
 

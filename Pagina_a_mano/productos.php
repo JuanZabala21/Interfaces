@@ -2,7 +2,10 @@
 <!-- Titulo Catalogo -->
  <div class="titulo-cata">Productos</div>
  <div class="container">
+ <?php if($mensaje !="");?>
+ <div class="alert alert-success">
  <?php echo $mensaje;?>
+</div>
  </div>
 <!-- Grid -->
 <div class="row">

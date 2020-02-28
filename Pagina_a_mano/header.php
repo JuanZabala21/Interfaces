@@ -3,6 +3,7 @@ include ('global/config.php');
 include ('global/conexion.php');
 include ('carrito.php');
 ?>
+
         <head>
             <meta charset="utf-8">
             <title>Tienda</title>
@@ -12,7 +13,6 @@ include ('carrito.php');
             <link href="css/grid.css" rel="stylesheet" />
             <link href="css/footer.css" rel="stylesheet" />
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
             <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"> 
         </head>
@@ -34,7 +34,7 @@ include ('carrito.php');
                                         <a href="index.php"><li>Inicio</li></a>
                                         <a href="productos.php"><li>Productos</li></a>
                                         <a href="../login.php"><li>Iniciar Sesión</li></a>
-                                        <a href="../registro.php"><li>Registrarse</li></a>
+                                        <a href=""><li>Panel</li></a>
                                       
                                     </ul>
                                 </div>
