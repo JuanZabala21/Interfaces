@@ -57,6 +57,7 @@ $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
           type="submit"
           >Ver
           </button> 
+          
         </from>
       </div>
     </div>

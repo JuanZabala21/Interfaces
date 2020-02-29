@@ -15,8 +15,8 @@
     <div id="sidebar">
         <ul>
             
-        <a href="" ><li><div class="centrar-medio">Home</div></li></a>
-        <a href="" ><li><div class="centrar-medio">Cerrar Sesión</div></li></a>
+        <a href="index.php" ><li><div class="centrar-medio">Home</div></li></a>
+        <a href="logout.php" ><li><div class="centrar-medio">Cerrar Sesión</div></li></a>
         </ul>
     </div>
 
