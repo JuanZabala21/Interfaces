@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
-    <?php include("header.php")?>
+    <?php include("header.php");
+         include('global/config2.php'); 
+    ?>
 
     <div id="header">
         <img alt="el papa juan" src="assets/img/juan.jpg" id="admin-logo"></img>
@@ -21,7 +23,7 @@
     </div>
 
     <div id="data">
-        <div class="titulo-panel">Productos Mas Buscados</div>
+        <div class="titulo-panel">Productos más vistos</div>
             <div class="container">
             <?php if($mensaje !="");?>
             <div class="alert alert-success">
@@ -34,6 +36,7 @@
             $sentencia=$pdo->prepare("SELECT * FROM `productos`"); 
             $sentencia->execute();
             $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC); 
+
             ?> 
 
             <?php foreach($listaProductos as $producto){ ?>
@@ -50,18 +53,28 @@
                     src="<?php echo $producto['Imagen'];?>">
                     <div class="card-body">
                     <span><?php echo $producto['Nombre'];?></span>
-                    <h5 class="card-title">Aqui va el contador de numeros</h5>
+                    <H2> <?php echo $producto['Click'];?></H2>
+                    <H3>Vistas</H3>
                     
                     <form action="" method="post">
                     <input type= "hidden"  class="text" name="id" id="id" value="<?php echo openssl_encrypt($producto['id'],COD,KEY);?>"> 
                     <input type= "hidden"  class="text" name="Nombre" id="Nombre" value="<?php echo openssl_encrypt($producto['Nombre'],COD,KEY);?>">
                     <input type= "hidden"  class="text" name="Precio" id="Precio" value="<?php echo openssl_encrypt($producto['Precio'],COD,KEY);?>">
                     <input type= "hidden"  class="text" name="Cantidad" id="Cantidad" value="<?php echo openssl_encrypt(1,COD,KEY);?>">
-                    
-                    <button class="btn-reset">Resetear</button>
 
-                    </form>    
+                  </form>
+                    <form action="delete.php" method="post">
+                    <input type= "hidden"  class="text" name="id" id="id" value="<?php echo openssl_encrypt($producto['id'],COD,KEY);?>"> 
+                    <input type= "hidden"  class="text" name="Click" id="Click" value="<?php echo $producto['Click'];?>">
 
+                   
+                    <button
+                     class="btn-reset"
+                     type="submit"
+                     value="resetear"
+                     >Resetear</button>
+                </form>
+           
                 </div>
                 </div>
             </div>

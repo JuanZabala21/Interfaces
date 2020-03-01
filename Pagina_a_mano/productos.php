@@ -29,7 +29,7 @@ $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         src="<?php echo $producto['Imagen'];?>">
         <div class="card-body">
         <span><?php echo $producto['Nombre'];?></span>
-        <h5 class="card-title"><?php echo $producto['Precio'];?>$</h5>
+        <h2 class="card-title"><?php echo $producto['Precio'];?>$</h2>
         
         <form action="" method="post" style="margin-bottom: 0;">
         <input type= "hidden"  class="text" name="id" id="id" value="<?php echo openssl_encrypt($producto['id'],COD,KEY);?>"> 
