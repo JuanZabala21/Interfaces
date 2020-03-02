@@ -19,8 +19,10 @@ $conteo=$pdo->prepare("SELECT * FROM `productos` ");
 $conteo->execute(); 
 $listaConteo = $conteo->fetchAll(PDO::FETCH_ASSOC);
 
+$prueba = openssl_decrypt($_POST['id2'],COD,KEY);
+
 foreach($listaConteo as $numeroConteo){
-  if ($numeroConteo['id'] == openssl_decrypt($_POST['id2'],COD,KEY)) {
+  if ($numeroConteo['id'] == $prueba) {
     $var = $numeroConteo['Click'];
     $var +=1;
     $id=openssl_decrypt($_POST['id2'],COD,KEY);
@@ -31,7 +33,7 @@ foreach($listaConteo as $numeroConteo){
 ?> 
 
 <?php foreach($listaProductos as $producto){ 
-    if ($producto['id'] == openssl_decrypt($_POST['id2'],COD,KEY)) { ?>
+    if ($producto['id'] == $prueba) { ?>
     <div class="column prueba" style="margin-bottom: 20px;">
       <div class="card pro">
       <br>

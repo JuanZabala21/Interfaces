@@ -50,7 +50,11 @@
     top: 0;
     margin-top: auto;
     margin-bottom: auto;
-    background: linear-gradient(114.34deg, #2537D6 -18.15%, #4B62FF 18.06%, #4C66FE 52.54%, #627CFF 88.84%, #4285F4 142.48%);
+    background: rgb(115,216,255);
+    background: radial-gradient(circle, rgba(115,216,255,0.7) 0%, rgba(0,116,255,0.7) 100%);
+    /* background: rgb(0,146,255); */
+    /* background: radial-gradient(circle, rgba(0,146,255,0.5) 0%, rgba(148,233,206,0.5) 100%);     */
+   /* background: linear-gradient(114.34deg, #2537D6 -18.15%, #4B62FF 18.06%, #4C66FE 52.54%, #627CFF 88.84%, #4285F4 142.48%); */
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
     border-radius: 500px;
     /* border: 1px solid black; */
@@ -123,6 +127,7 @@
     bottom: 0;
     font-size: 30px;
     font-weight: 600;
+    
   }
 
   .colo-blue{

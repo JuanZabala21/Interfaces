@@ -3,6 +3,7 @@
  session_start();
  
  $mensaje=""; 
+ $resend = "http://interfaces.test/Pagina_a_mano/detallado.php";
 
  if(isset($_POST['btnAccion'])){
 
@@ -51,6 +52,7 @@
             );
             $_SESSION['Carrito'][0]=$producto; 
             $mensaje="Producto agregado al carrito"; 
+            header("Location: ".$resend);
         
         }else{ 
              $idProductos=array_column($_SESSION['Carrito'],"id");
@@ -67,11 +69,13 @@
                 );
                 $_SESSION['Carrito'][$NumPro]=$producto; 
                 $mensaje="Producto agregado al carrito"; 
+                header("Location: ".$resend);
             }
             
         }
 
-            $mensaje="Producto agregado al carrito"; 
+            // header("Location: ".$resend);
+            // $mensaje="Producto agregado al carrito"; 
     break;
 
     case "Eliminar": 
