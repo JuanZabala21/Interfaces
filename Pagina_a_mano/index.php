@@ -38,21 +38,6 @@
              <div class="sepadador" style="margin-top: 9px;">
             </div>
 
-            <!-- Search Bar -->
-            <div class="wrap">
-                <div class="search">
-                   <input type="text" class="searchTerm" placeholder="Que desea buscar?">
-                   <button type="submit" class="searchButton">
-                     <div class="ejemplo">BUSCAR</div>
-                     <i class="fa fa-search"></i>
-                     
-                  </button>
-                </div>
-             </div>
-
-<!-- Separador -->
-
-
             <!-- Footer -->
 
         <?php include('footer.php'); ?>

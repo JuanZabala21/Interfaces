@@ -1,4 +1,11 @@
 <?php include('header.php'); ?>
+
+<style>
+.titulo-cata{
+  margin-top: 15px;
+}
+</style> 
+
 <!-- Titulo Catalogo -->
  <div class="titulo-cata">Productos</div>
  <div class="container">

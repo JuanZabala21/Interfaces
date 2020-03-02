@@ -3,7 +3,7 @@
  session_start();
  
  $mensaje=""; 
- $resend = "http://interfaces.test/Pagina_a_mano/detallado.php";
+ $resend = "http://localhost/interfaces/Pagina_a_mano/productos.php";
 
  if(isset($_POST['btnAccion'])){
 
@@ -58,6 +58,7 @@
              $idProductos=array_column($_SESSION['Carrito'],"id");
                if(in_array($id,$idProductos)){
                 echo "<script> alert('El producto ya ha sido seleccionado')</script>";
+                header('location: productos.php');
             }else{
 
             $NumPro= count($_SESSION['Carrito']);

@@ -1,7 +1,15 @@
 <?php include('header.php'); ?>
 <?php include('global/config2.php'); ?>
 <!-- Titulo Catalogo -->
- <div class="titulo-cata">Producto</div>
+
+<style>
+.titulo-cata{
+  margin-top: 15px;
+}
+</style> 
+
+
+ <div style="text-align: center"class="titulo-cata">Producto</div>
  <div class="container">
  <?php if($mensaje !="");?>
  <div class="alert alert-success">
@@ -9,7 +17,7 @@
 </div>
  </div>
 <!-- Grid -->
-<div class="caja">
+<div style="margin-left: 650px" class="caja">
 <?php    
 $sentencia=$pdo->prepare("SELECT * FROM `productos` "); 
 $sentencia->execute();
@@ -48,7 +56,7 @@ foreach($listaConteo as $numeroConteo){
         <div class="card-body">
         <span><?php echo $producto['Nombre'];?></span>
         <p><?php echo $producto['Descripcion'];?></p>
-        <h5 class="card-title"><?php echo $producto['Precio'];?>$</h5>
+        <h3 class="card-title"><?php echo $producto['Precio'];?>$</h3>
         
         <form action="" method="post">
         <input type= "hidden"  class="text" name="id" id="id" value="<?php echo openssl_encrypt($producto['id'],COD,KEY);?>"> 
@@ -62,9 +70,14 @@ foreach($listaConteo as $numeroConteo){
         type="submit"
         class="btn-reset"
         >Agregar al carrito
-        </button>   
+        </button> 
         </form>    
-
+        <input
+        class="btn-reset"
+        value="Regresar"
+        type="submit"
+        onclick = "location = 'productos.php '"
+        >
       </div>
     </div>
   </div>

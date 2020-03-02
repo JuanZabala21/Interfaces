@@ -182,7 +182,7 @@ header {
 }
 
 .sepadador{
-    height: 5px;
+    height: 15px;
     width: 100%;
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(4,127,199,1) 10%, rgba(0,146,255,1) 23%, rgba(5,101,182,1) 35%, rgba(8,26,138,1) 50%, rgba(4,126,198,1) 64%, rgba(0,146,255,1) 75%, rgba(4,127,199,1) 88%, rgba(9,9,121,1) 100%);

@@ -12,7 +12,7 @@ try{
 
 }catch (PDOException $e){
 
-     echo "<script> alert('Error....') </script>"; 
+     // echo "<script> alert('Error....') </script>"; 
 }
 
 ?>
